@@ -1,0 +1,41 @@
+.project-img1 {
+  cursor: pointer;
+  position: relative;
+  width: 600px;
+  height: 500px;
+  background-image: url("https://i.postimg.cc/G2gGFmxb/Screenshot-2023-04-17-125240.png");
+  background-size: cover;
+}
+.project-img2 {
+  cursor: pointer;
+  position: relative;
+  width: 600px;
+  height: 500px;
+  background-image: url("https://i.postimg.cc/2806RRvZ/Screenshot-2023-04-17-150740.png");
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

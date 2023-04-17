@@ -6,6 +6,11 @@ import {
   FaLinkedin,
   FaMailBulk,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
+function handleMailTo() {
+  window.location.href = "mailto:surajitch10@gmail.com";
+}
 function Footer() {
   return (
     <>
@@ -13,7 +18,7 @@ function Footer() {
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#2a2a2a"
-            fill-opacity="1"
+            fillOpacity="1"
             d="M0,128L0,128L288,128L288,256L576,256L576,64L864,64L864,160L1152,160L1152,64L1440,64L1440,320L1152,320L1152,320L864,320L864,320L576,320L576,320L288,320L288,320L0,320L0,320Z"
           ></path>
         </svg>
@@ -26,10 +31,23 @@ function Footer() {
             <div className="h-1 border-2 border-white border-dotted"></div>
 
             <div className="flex text-white w-full justify-between py-3">
-              
-              <FaMailBulk />
-              <FaLinkedin />
-              <FaGithub />
+              <button onClick={handleMailTo}>
+                <FaMailBulk />
+              </button>
+              <a
+                href="https://in.linkedin.com/in/surajit-chakraborty-a55006161"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="https://github.com/surajitch10"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub />
+              </a>
             </div>
 
             <div className="h-1 border-2 border-gray-50 border-dotted"></div>
